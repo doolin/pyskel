@@ -1,0 +1,4 @@
+pyskel
+======
+
+Simple python skeleton
