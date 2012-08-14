@@ -16,7 +16,7 @@ def parse_arguments():
 
 def run_pyskel():
     ps = PySkel()
-    ps.foo()
+    print ps.foo()
 
 if __name__ == '__main__':
     #parse_arguments()
