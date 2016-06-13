@@ -11,9 +11,9 @@ class TestPySkel(unittest.TestCase):
         # dummy
         self.testing = True
 
-    def test_foo(self):
+    def test_foo_is_blacklisted(self):
         ps = PySkel()
-        assert('bar' == ps.foo())
+        assert ps.foo_is_blacklisted() == 'bar'
 
     def tearDown(self):
         # dummy
