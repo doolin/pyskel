@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env pipenv run python3
 
 # main is lame name, you want to change it after checking out
 
@@ -20,11 +20,11 @@ def parse_arguments():
 
     # Process the command line arguments
     if args.verbosity:
-        print "verbosity enabled..."
+        print("verbosity enabled...")
 
 def run_pyskel():
     ps = PySkel()
-    print ps.foo()
+    print(ps.foo_is_blacklisted())
 
 if __name__ == '__main__':
     parse_arguments()
