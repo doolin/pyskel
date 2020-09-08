@@ -1,23 +1,17 @@
-#!/usr/bin/env pipenv run python3
-
-import unittest
 import sys
-sys.path.append('../lib')
+sys.path.append('./lib')
 from pyskel import *
 
-class TestPySkel(unittest.TestCase):
-
+class TestPySkel:
     def setUp(self):
-        # dummy
         self.testing = True
 
     def test_foo_is_blacklisted(self):
         ps = PySkel()
+        # Invoke with `-s` to see printing:
+        # `pipenv run pytest -s`
+        print("from test")
         assert ps.foo_is_blacklisted() == 'bar'
 
     def tearDown(self):
-        # dummy
         self.testing = False
-
-if __name__ == '__main__':
-    unittest.main()
