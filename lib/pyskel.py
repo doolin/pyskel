@@ -1,10 +1,10 @@
-'''Make docstring happy'''
+'''Make pylint happy'''
 
-class PySkel(object):
-    '''Make docstring happy'''
+class PySkel:
+    '''Make pylint happy'''
 
     def foo_is_blacklisted(self):
-        '''Make docstring happy'''
+        '''Make pylint happy'''
         return "bar"
 
     def bar_is_blacklisted(self):
